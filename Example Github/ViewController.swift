@@ -8,12 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let text: UILabel = {
+        let view = UILabel()
+        let title = NSMutableAttributedString(
+            string: "Hello, GitHub"
+        )
+        view.attributedText = title
+        return view
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.view.backgroundColor = .white
+        
+        self.view.addSubview(text)
+        text.translatesAutoresizingMaskIntoConstraints = false
+        
+        text.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        text.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
     }
-
-
 }
 
