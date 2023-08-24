@@ -12,6 +12,8 @@
 		B0CE18EF2A9765B500B27662 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE18EE2A9765B500B27662 /* ViewController.swift */; };
 		B0CE18F42A9765B600B27662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0CE18F32A9765B600B27662 /* Assets.xcassets */; };
 		B0CE18F72A9765B600B27662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CE18F52A9765B600B27662 /* LaunchScreen.storyboard */; };
+		B0CE19002A976D5900B27662 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B0CE18FF2A976D5900B27662 /* CombineCocoa */; };
+		B0CE19022A9775B300B27662 /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CE19012A9775B300B27662 /* TextFieldWithPadding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		B0CE18F32A9765B600B27662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0CE18F62A9765B600B27662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0CE18F82A9765B600B27662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0CE19012A9775B300B27662 /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0CE19002A976D5900B27662 /* CombineCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +64,7 @@
 				B0CE18F32A9765B600B27662 /* Assets.xcassets */,
 				B0CE18F52A9765B600B27662 /* LaunchScreen.storyboard */,
 				B0CE18F82A9765B600B27662 /* Info.plist */,
+				B0CE19012A9775B300B27662 /* TextFieldWithPadding.swift */,
 			);
 			path = "Example Github";
 			sourceTree = "<group>";
@@ -80,6 +85,9 @@
 			dependencies = (
 			);
 			name = "Example Github";
+			packageProductDependencies = (
+				B0CE18FF2A976D5900B27662 /* CombineCocoa */,
+			);
 			productName = "Example Github";
 			productReference = B0CE18E72A9765B500B27662 /* Example Github.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +116,9 @@
 				Base,
 			);
 			mainGroup = B0CE18DE2A9765B500B27662;
+			packageReferences = (
+				B0CE18FE2A976D5900B27662 /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+			);
 			productRefGroup = B0CE18E82A9765B500B27662 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0CE18EF2A9765B500B27662 /* ViewController.swift in Sources */,
+				B0CE19022A9775B300B27662 /* TextFieldWithPadding.swift in Sources */,
 				B0CE18EB2A9765B500B27662 /* AppDelegate.swift in Sources */,
 				B0CE18ED2A9765B500B27662 /* SceneDelegate.swift in Sources */,
 			);
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B0CE18FE2A976D5900B27662 /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B0CE18FF2A976D5900B27662 /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0CE18FE2A976D5900B27662 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B0CE18DF2A9765B500B27662 /* Project object */;
 }
