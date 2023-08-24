@@ -11,7 +11,7 @@ import CombineCocoa
 
 class ViewController: UIViewController {
     
-    @Published var textFieldValue = "Placeholder"
+    @Published var textFieldValue = "Place holder"
     
     private var cancellabels = Set<AnyCancellable>()
     
